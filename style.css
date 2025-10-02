@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #000;
     background-image: radial-gradient(circle, rgba(0, 150, 255, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
     height: 90vh;
 }
+
 section{
     margin-top: 80px;
 }
+
 h1{
     font-family: "jolly lodger";
     font-size: 120px;
@@ -20,6 +23,7 @@ h1{
     background-color: #ffffff00;
     background-image: none;
     text-align: center;
+    margin-bottom: 20px;
 }
 section{
     display: flex;
@@ -71,8 +75,8 @@ button:hover{
 /* Dialog */
 
 dialog {
-    margin-top: 300px;
-    margin-left: 500px;
+    margin-top: 250px;
+    margin-left: 475px;
     padding: 0;
     border-radius: 0.5rem;
     width: 91.666667%;
