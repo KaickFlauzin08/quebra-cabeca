@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    background-image: radial-gradient(circle, rgba(0, 150, 255, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    height: 90vh;
+}
+section{
+    margin-top: 80px;
+}
+h1{
+    font-family: "jolly lodger";
+    font-size: 120px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #8958FF; 
+    color: white;
+    background-color: #ffffff00;
+    background-image: none;
+    text-align: center;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-gap: 20px;
+}
+
+img{
+    background-color: #ffffff00;
+    background-image: none;
+}
+.card{
+    width: 200px;
+    height: 175px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #FFE3BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    height: 175px;
+    cursor: pointer;
+    background-color: #FFE3BD;
+    transition: all 0.3s ease;
+    font-family: "jolly lodger";
+    font-size: 49px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #8958FF;
+    color: white;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+/* Dialog */
+
+dialog {
+    margin-top: 300px;
+    margin-left: 500px;
+    padding: 0;
+    border-radius: 0.5rem;
+    width: 91.666667%;
+    height: 500px;
+    max-width: 60rem;
+    border: none;
+    background-color: #00000000;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(4px);
+}
+
+.img-dialog{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 410px;
+    position: absolute;
+    margin-left: 760px;
+}
+
+.brabox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60rem;
+}
+
+
+.dialogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 3rem;
+}
+
+dialog > div {
+    padding: 3rem;
+}
+
+dialog h3 {
+    font-size: 72px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #8958FF; 
+    margin-bottom: 1rem;
+    color: white;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "jolly lodger";
+}
+dialog p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    color: white;
+    width: 500px;
+    align-items: center;
+}
+dialog button {
+    font-size: 1.875rem;
+    color: white;
+    background-color: #8958FF;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 46px;
+    width: 312px;
+    top: 240px;
+    right: 350px;
+    font-family: none;
+}
+
+dialog button:hover {
+    background-color: #8958FF;
+}

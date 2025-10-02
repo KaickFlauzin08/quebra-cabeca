@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra Cabeça</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="Titulo">
+
+            
+            <h1>Jogo da Memória</h1>
+        </div>
+            <div class="cartas">
+
+                <div class="card"><img src="/img/1.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/2.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/3.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/4.png" alt="Aboborá">
+                </div>
+
+                <div>
+
+               
+                <button id="open-video-btn">Buuh!</button> </div>
+
+
+                <div class="card"><img src="/img/6.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/7.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/8.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/9.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/10.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/11.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/12.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/13.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/14.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/15.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/16.png" alt="Aboborá">
+                </div>
+
+
+                <div class="card"><img src="/img/17.png" alt="Aboborá">
+                </div>
+                    <div class="card"><img src="/img/18.png" alt="Aboborá">
+
+                    </div>
+                </div>
+        </section>
+    </main>
+    <section>
+
+
+    <dialog id="video-dialog">
+        
+        <div class="brabox">
+            <div class="dialogo">
+                <h3>Buuh</h3>
+                <p> Parabéns! Você completou este jogo da memória. Que tal experimentar uma dificuldade diferente ou jogar novamente na mesma dificuldade?</p>
+                <button id="close-video-btn">
+                    Jogar novamente
+                </button>
+            </div>
+            <div class="img-dialog">
+                <img src="./img/Web.png" alt="teia">
+            </div>
+        </div>
+
+    </dialog>
+    </section>
+
+
+        <script>
+
+            <!-- Get the modal -->
+            const openBnt = document.getElementById('open-video-btn');
+            const closeBnt = document.getElementById('close-video-btn');
+            const videoDialog = document.getElementById('video-dialog');
+
+            openBnt.addEventListener('click', () => {
+                videoDialog.showModal();
+            });
+            closeBnt.addEventListener('click', () => {
+                videoDialog.close();
+            });
+            videoDialog.addEventListener('click', (event) => {
+                if (event.target === videoDialog) {
+                    videoDialog.close();
+                }
+            });
+        </script>
+</body>
+
+</html>
